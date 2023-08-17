@@ -6,7 +6,7 @@ app.use(
         extended: true
     })
 )
-const beachesData = [
+const  beachesData = [
     {
         "id": 1,
         "location": "Champagne Beach",
@@ -64,5 +64,5 @@ app.listen(3000, () => {
     console.log("connected ")
 });
 app.get('/', (req, res) => {
-    res.status(200).json(locationData);
+    res.status(200).json( beachesData);
 })
